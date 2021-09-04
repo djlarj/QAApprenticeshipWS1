@@ -1,0 +1,7 @@
+.heroimage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/SNL_123SesameStreet_StreetSign.PNG");
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 500px;
+}
