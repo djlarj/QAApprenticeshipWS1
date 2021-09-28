@@ -18,6 +18,9 @@ Website 1
 
 ## Website Acceptance Criteria for QA
 
+Click on this link to see the Webpage UI:
+https://djlarj.github.io/QAApprenticeshipWS1/
+
 Basics:
 1) Does the website contain a header?
 - [ ] Yes
