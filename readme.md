@@ -53,6 +53,7 @@ Notes:
 Notes:
 
 Website 1:
+
 6) Does the Home Page contain 5 items with images?
 - [ ] Yes
 - [ ] No
