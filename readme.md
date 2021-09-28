@@ -22,6 +22,7 @@ Basics:
 1) Does the website contain a header?
 - [ ] Yes
 - [ ] No
+
 Notes:
 
 2) Does the website contain a footer?
