@@ -1,4 +1,4 @@
-##Website Acceptance Criteria for Developer
+## Website Acceptance Criteria for Developer
 
 Basics: 
 1) Header
@@ -16,7 +16,7 @@ Website 1
 5) Pick a complementary ADA compliant color scheme 
 
 
-##Website Acceptance Criteria for QA
+## Website Acceptance Criteria for QA
 
 Basics:
 1) Does the website contain a header?
