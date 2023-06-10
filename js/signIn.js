@@ -11,7 +11,7 @@ loginButton.addEventListener("click", (e) => {
     if (username === "User1" && password === "ILoveElmo!") {
         // alert("You have successfully logged in.");
         // location.reload();
-        location = "action.html";
+        location = "userDashboard.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
