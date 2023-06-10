@@ -8,4 +8,9 @@
 
 #login-error-msg {
     opacity: 0;
-  }
+    color: #ff7a87;
+}
+
+.invalid-feedback {
+    color: #ff7a87;
+}
