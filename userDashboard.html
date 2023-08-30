@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="css\styles.css">
 
         <!-- Font Awesome -->
@@ -19,7 +19,35 @@
     <body>
         
         <!-- Navbar -->
-        <div id="navbar-placeholder"></div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+
+            <!-- Logo -->
+            <a id="sesameStreetLogo" href="index.html"><img src="img/Sesame_Street_logo.svg" alt="123 Sesame Street Logo" class="navbar-brand"></a>
+
+            <!-- Navbar Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-bars ham" aria-hidden="true"></i></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav justify-content-end fw-bold">
+                    <li class="nav-item">
+                        <a id="speakersLink" class="nav-link text-body" href="index.html#speakers">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="ticketsLink" class="nav-link text-body" href="https://www.ticketmaster.com/sesame-street-tickets/artist/837678" target="_blank">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactLink" class="nav-link text-body" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="infoLink" class="nav-link text-body" href="info.html">Info</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
 
         <!-- Message -->
         <form class="" novalidate action="index.html" target="_self">
@@ -31,18 +59,41 @@
         </form>
 
         <!-- Footer -->
-        <div id="footer-placeholder"></div>
+        <footer class="container-fluid mt-5">
+            <div class="row" style="height: 100px;">
+                <!-- Copyright -->
+                <div class="col bg-light d-flex justify-content-center text-dark fw-bold">
+                    <p class="align-middle my-auto text-center">©2023 The Geek Next Door</p>
+                </div>
+                <!-- Nav Links -->
+                <div class="col bg-light d-flex justify-content-center">
+                    <p class="my-auto text-center fw-bold">
+                        <a class="align-middle mx-3 text-dark text-decoration-none" href="index.html#speakers">Speakers</a>
+                        <a class="align-middle mx-3 text-dark text-decoration-none" href="https://www.ticketmaster.com/sesame-street-tickets/artist/837678" target="_blank">Tickets</a>
+                        <a class="align-middle mx-3 text-dark text-decoration-none" href="contact.html">Contact</a>
+                        <a class="align-middle mx-3 text-dark text-decoration-none" href="info.html">Info</a>
+                    </p>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col bg-light d-flex justify-content-center">
+                    <p class="my-auto text-center">
+                        <a class="align-middle mx-3 text-dark" href="https://www.facebook.com" target="_blank" aria-label="Follow me on facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="align-middle mx-3 text-dark" href="https://www.instagram.com" target="_blank" aria-label="Follow me on instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="align-middle mx-3 text-dark" href="https://www.pinterest.com" target="_blank" aria-label="Follow me on pinterest">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a class="align-middle mx-3 text-dark" href="https://www.twitter.com" target="_blank" aria-label="Follow me on twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(function() {
-                $("#navbar-placeholder").load("navigation.html"); // Load the navigation from navigation.html
-                $("#footer-placeholder").load("footer.html"); // Load the footer from footer.html                
-            });
-        </script>
 
     </body>
 
