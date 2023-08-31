@@ -50,25 +50,27 @@
         </nav>
 
         <!-- Sign In Form -->
-        <div class="col-md-3 order-md-1 bg-dark text-white mx-auto mb-5">
-            <div class="my-5 pt-5 text-center">
-                <h1>User Sign In</h1>
-            </div>
-            <div id="login-error-msg-holder">
-                <p id="login-error-msg" class="text-center">Invalid username 
-                    <span id="error-msg-second-line" class="d-block">and/or password</span></p>
-            </div>
-            <form id="sign-in-form" class="mx-3">
-                <div class="form-group">
-                    <label class="mb-2" for="username">Username</label>
-                    <input type="text" class="form-control mb-3" id="username" name="username">
+        <div class="container" id="sign-in-form-body">
+            <div class="col-md-6 order-md-1 bg-dark text-white mx-auto mb-5">
+                <div class="my-5 pt-5 text-center">
+                    <h1>User Sign In</h1>
                 </div>
-                <div class="form-group">
-                    <label class="mb-2" for="password">Password</label>
-                    <input type="password" class="form-control mb-3" id="password" name="password">
+                <div id="login-error-msg-holder">
+                    <p id="login-error-msg" class="text-center">Invalid username 
+                        <span id="error-msg-second-line" class="d-block">and/or password</span></p>
                 </div>
-                <button class="btn btn-dark mb-3" type="submit" id="signInButton" value="sign">Sign In</button>
-            </form>
+                <form id="sign-in-form" class="mx-3">
+                    <div class="form-group">
+                        <label class="mb-2" for="username">Username</label>
+                        <input type="text" class="form-control mb-3" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-2" for="password">Password</label>
+                        <input type="password" class="form-control mb-3" id="password" name="password">
+                    </div>
+                    <button class="btn btn-dark mb-3" type="submit" id="signInButton" value="sign">Sign In</button>
+                </form>
+            </div>
         </div>    
 
         <!-- Footer -->

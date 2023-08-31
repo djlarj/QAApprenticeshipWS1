@@ -20,13 +20,19 @@
 }
 
 @media (min-width: 1200px) {
-    #contact-form-body {
+    #sign-in-form-body {
         max-width: 1000px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+    #contact-form-body {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1024px) {
     #practice-form-body {
-        max-width: 1200px;
+        max-width: 1000px;
     }
 }
