@@ -50,107 +50,109 @@
         </nav>
 
         <!-- Form -->
-        <div class="col-md-6 order-md-1 bg-dark text-white mx-auto mb-5">
-            <div class="my-5 pt-5 text-center">
-                <h1>Practice Form</h1>
+        <div class="container" id="practice-form-body">
+            <div class="col-md-8 order-md-1 bg-dark text-white mx-auto mb-5">
+                <div class="my-5 pt-5 text-center">
+                    <h1>Practice Form</h1>
+                </div>
+                <form class="needs-validation mx-3" novalidate action="action.html" target="_self">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="readOnlyField">Read Only Field</label>
+                            <input type="text" class="form-control" id="readOnlyField" placeholder="This field is not editable" readonly>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="skills">Skill Level Dropdown</label>
+                            <select class="form-select" id="skillLevel" required>
+                                <option id="skillTrainee" value="tra" selected>Trainee</option>
+                                <option id="skillNovice" value="nov">Novice</option>
+                                <option id="skillProficient" value="pro">Proficient</option>
+                                <option id="skillExpert" value="exp">Expert</option>
+                            </select>
+                        </div>
+                        <!-- This field will become visible in 20 seconds after the page refresh -->
+                        <div class="col-md-4 mb-3">
+                            <label for="newVisibleField">New Visible Field</label>
+                            <input type="text" class="form-control" id="newVisibleField" style="visibility:hidden" placeholder="This field became visible">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- This field will become editable in 10 seconds after the page refresh -->
+                        <div class="col-md-4 mb-3">
+                            <label for="newEditableField">New Editable Field</label>
+                            <input type="text" class="form-control" id="newEditableField" placeholder="Wait 10 sec to edit here" disabled>
+                        </div>
+                        <!-- This field will become not editable in 10 seconds after the page refresh -->
+                        <div class="col-md-4 mb-3">
+                            <label for="newNotEditableField">New Not Editable Field</label>
+                            <input type="text" class="form-control" id="newNotEditableField" placeholder="Wait 10 sec to not edit here">
+                        </div>
+                        <!-- This field will become hidden in 20 seconds after the page refresh -->
+                        <div class="col-md-4 mb-3">
+                            <label for="newHiddenField">New Hidden Field</label>
+                            <input type="text" class="form-control" id="newHiddenField" placeholder="Field will disappear in 20 sec">
+                        </div>
+                    </div>
+
+                    <div class="my-5">
+                        <p class="font-weight-bold" id="helloWorld" style="visibility:hidden">Hello World !!!</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <p>(Choose one of the following)</p>
+                        <p>I am a ...</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dogCheckbox" value="dog" checked>
+                            <label class="form-check-label" for="dogCheckbox">Dog Person</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="catCheckbox" value="cat">
+                            <label class="form-check-label" for="catCheckbox">Cat Person</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="bothCDCheckbox" value="bothCD">
+                            <label class="form-check-label" for="BothCDCheckbox">Both Cat and Dog Person</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <p>(Choose one of the following)</p>
+                        <p>I love ...</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="foodRadios" id="pizzaRadio" value="pizza" checked>
+                            <label class="form-check-label" for="pizzaRadio">Tacos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="foodRadios" id="tacosRadio" value="tacos">
+                            <label class="form-check-label" for="tacosRadio">Pizza</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="foodRadios" id="bothPTRadio" value="bothPT">
+                            <label class="form-check-label" for="bothPTRadio">Both Pizza and Tacos</label>
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" \ id="agreeCheckbox" value=""
+                            onclick="enableSubmitButton(this)">
+                        <label class="form-check-label" for="agreeCheckbox">I agree to the terms and conditions of the service.</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-dark mb-3" type="reset" id="resetButton" value="res">Reset</button>
+                        <button class="btn btn-dark mb-3" type="submit" id="submitButton" value="sub" hidden>Submit</button>
+                    </div>
+
+                </form>
             </div>
-            <form class="needs-validation mx-3" novalidate action="action.html" target="_self">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <label for="readOnlyField">Read Only Field</label>
-                        <input type="text" class="form-control" id="readOnlyField" placeholder="This field is not editable" readonly>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="skills">Skill Level Dropdown</label>
-                        <select class="form-select" id="skillLevel" required>
-                            <option id="skillTrainee" value="tra" selected>Trainee</option>
-                            <option id="skillNovice" value="nov">Novice</option>
-                            <option id="skillProficient" value="pro">Proficient</option>
-                            <option id="skillExpert" value="exp">Expert</option>
-                        </select>
-                    </div>
-                    <!-- This field will become visible in 20 seconds after the page refresh -->
-                    <div class="col-md-4 mb-3">
-                        <label for="newVisibleField">New Visible Field</label>
-                        <input type="text" class="form-control" id="newVisibleField" style="visibility:hidden" placeholder="This field became visible">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- This field will become editable in 10 seconds after the page refresh -->
-                    <div class="col-md-4 mb-3">
-                        <label for="newEditableField">New Editable Field</label>
-                        <input type="text" class="form-control" id="newEditableField" placeholder="Wait 10 sec to edit here" disabled>
-                    </div>
-                    <!-- This field will become not editable in 10 seconds after the page refresh -->
-                    <div class="col-md-4 mb-3">
-                        <label for="newNotEditableField">New Not Editable Field</label>
-                        <input type="text" class="form-control" id="newNotEditableField" placeholder="Wait 10 sec to not edit here">
-                    </div>
-                    <!-- This field will become hidden in 20 seconds after the page refresh -->
-                    <div class="col-md-4 mb-3">
-                        <label for="newHiddenField">New Hidden Field</label>
-                        <input type="text" class="form-control" id="newHiddenField" placeholder="Field will disappear in 20 sec">
-                    </div>
-                </div>
-
-                <div class="my-5">
-                    <p class="font-weight-bold" id="helloWorld" style="visibility:hidden">Hello World !!!</p>
-                </div>
-
-                <div class="mb-3">
-                    <p>(Choose one of the following)</p>
-                    <p>I am a ...</p>
-                </div>
-
-                <div class="mb-5">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="dogCheckbox" value="dog" checked>
-                        <label class="form-check-label" for="dogCheckbox">Dog Person</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="catCheckbox" value="cat">
-                        <label class="form-check-label" for="catCheckbox">Cat Person</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="bothCDCheckbox" value="bothCD">
-                        <label class="form-check-label" for="BothCDCheckbox">Both Cat and Dog Person</label>
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <p>(Choose one of the following)</p>
-                    <p>I love ...</p>
-                </div>
-
-                <div class="mb-5">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="foodRadios" id="pizzaRadio" value="pizza" checked>
-                        <label class="form-check-label" for="pizzaRadio">Tacos</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="foodRadios" id="tacosRadio" value="tacos">
-                        <label class="form-check-label" for="tacosRadio">Pizza</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="foodRadios" id="bothPTRadio" value="bothPT">
-                        <label class="form-check-label" for="bothPTRadio">Both Pizza and Tacos</label>
-                    </div>
-                </div>
-
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" \ id="agreeCheckbox" value=""
-                        onclick="enableSubmitButton(this)">
-                    <label class="form-check-label" for="agreeCheckbox">I agree to the terms and conditions of the service.</label>
-                </div>
-
-                <div class="mb-3">
-                    <button class="btn btn-dark mb-3" type="reset" id="resetButton" value="res">Reset</button>
-                    <button class="btn btn-dark mb-3" type="submit" id="submitButton" value="sub" hidden>Submit</button>
-                </div>
-
-            </form>
-        </div>
+        </div>    
 
         <!-- Embedded Elements -->
         <div class="container">
@@ -167,8 +169,8 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="col-lg">
-                    <h3 class="text-center" id="jsonCode">JSON Text</h3>
+                <div class="col-lg" id="jsonCode">
+                    <h3 class="text-center">JSON Text</h3>
                     <pre class="my-5">
                     {
                         "Name": "Oscar the Grouch",
