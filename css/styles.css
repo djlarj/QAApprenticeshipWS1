@@ -15,6 +15,10 @@
     color: #ff7a87;
 }
 
+#inspiration {
+    max-width: 500px;
+}
+
 @media (min-width: 1200px) {
     #contact-form-body {
         max-width: 1000px;
@@ -24,11 +28,5 @@
 @media (min-width: 1200px) {
     #practice-form-body {
         max-width: 1200px;
-    }
-}
-
-@media (max-width: 991px) {
-    #jsonCode {
-        margin-top: 3rem;
     }
 }
